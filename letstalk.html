@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         :root {
+            --antime: 0.7s;
+            --cubez: cubic-bezier(.22, -0.08, .32, 1.22);
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        @font-face {
+            font-family: Satoshi;
+            src: url(./fonts/Satoshi-Variable.ttf);
+        }
+        
+        .letsTalk {
+            width: 30vw;
+            height: 10vw;
+            position: relative;
+        }
+        
+        .ltcircle {
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            transition: var(--antime) all var(--cubez);
+        }
+        
+        .ltcircle circle {
+            r: '35%';
+            transition: var(--antime) all var(--cubez);
+        }
+        
+        .letstalk-text {
+            font-family: Satoshi, sans-serif;
+            color: #49581D;
+            font-weight: bold;
+            font-size: 3vw;
+            position: absolute;
+            height: 100%;
+            text-align: center;
+            left: 33%;
+            line-height: 10vw;
+            transition: var(--antime) all var(--cubez);
+        }
+        
+        .ltplus {
+            height: 3vw;
+            margin: 3.5vw 0;
+            position: absolute;
+            left: 80%;
+            transition: var(--antime) left var(--cubez);
+        }
+        
+        .ltplus line {
+            transition: var(--antime) stroke ease-in-out;
+        }
+        
+        .ltplus {
+            transition: var(--antime) all var(--cubez);
+        }
+        
+        .letsTalk:hover .ltcircle {
+            left: 60%;
+        }
+        
+        .letsTalk:hover .ltcircle circle {
+            r: 47%;
+        }
+        
+        .letsTalk:hover .ltplus {
+            left: 70%;
+        }
+        
+        .letsTalk:hover .ltplus line {
+            stroke: #FFFEE9;
+        }
+        
+        .letsTalk:hover .letstalk-text {
+            left: 5%;
+        }
+        
+        .letstalk-nexttext {
+            width: 30vw;
+            height: 10vw;
+            font-family: Satoshi, sans-serif;
+            font-size: 2.1vw;
+            margin-left: 5vw;
+            margin-top: 1vw;
+        }
+        
+        .ltcontainer {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br><br>
+    <div class="ltcontainer">
+        <div class="letsTalk">
+            <svg height="100%" width="30%" class="ltcircle" class="ltcircle">
+                    <circle cx="50%" cy="50%" r="35%" fill="#DA7C4C" />
+                </svg>
+            <div class="letstalk-text">Let's Talk</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none" class="ltplus">
+                    <line x1="22.5" y1="1.5" x2="22.5" y2="41.5" stroke="#DA7C4C" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="1.5" y1="20.5" x2="41.5" y2="20.5" stroke="#DA7C4C" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+        </div>
+        <div class="letstalk-nexttext">
+            Feel free to connect with us. Sign up to get event notification and updates
+        </div>
+    </div>
+</body>
+
+</html>
