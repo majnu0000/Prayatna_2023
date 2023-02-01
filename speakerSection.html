@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #FFFEE9;
+        }
+        
+        @font-face {
+            font-family: Satoshi;
+            src: url(./fonts/Satoshi-Variable.ttf);
+        }
+        
+        @font-face {
+            font-family: Nephilm;
+            src: url(./fonts/Nephilm.otf);
+        }
+        
+        .speaker-section {
+            width: 100%;
+        }
+        
+        .speaker-section-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .speaker2023 {
+            width: 100%;
+            font-family: Nephilm;
+            color: #49581D;
+            font-size: 10vw;
+            text-align: center;
+        }
+        
+        .speaker2023-subtext {
+            font-family: Satoshi, sans-serif;
+            color: #49581D;
+            font-size: 2vw;
+            width: 80vw;
+            text-align: center;
+        }
+        
+        .speaker-section-2 {
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        .speaker-m-pic {
+            width: 40vw;
+            transform: translateX(50vw);
+            padding: 0.5vw;
+            border: solid #FFFEE9 2px;
+        }
+        
+        .speaker-m-pic img {
+            width: 100%;
+        }
+        
+        .speaker-section-2-wrapper {
+            padding: 10vw 0;
+            background-color: #DA7C4C;
+        }
+        
+        .featuring-speaker {
+            position: absolute;
+            top: 5%;
+            right: 40%;
+            font-family: Satoshi, sans-serif;
+            color: #FFFEE9;
+            font-weight: bold;
+        }
+        
+        .featuring-speaker div {
+            text-align: end;
+        }
+        
+        .speaker-text {
+            font-family: Satoshi, sans-serif;
+            color: #FFFEE9;
+            font-size: 2vw;
+            width: 30vw;
+            position: absolute;
+            left: 10%;
+            bottom: 6vw;
+        }
+        
+        .speaker-socials {
+            font-family: Satoshi, sans-serif;
+            color: #FFFEE9;
+            font-size: 1.6vw;
+            width: 30vw;
+            position: absolute;
+            left: 10%;
+            bottom: 0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="speaker-section">
+        <div class="speaker-section-1">
+            <div class="speaker2023">2023 SPEAKERS</div>
+            <div class="speaker2023-subtext"><br>Meet with industry experts and social sector leaders as they lead forward-thinking conversations, deliver sessions jam-packed with actionable strategies, and provide you with tools you can implement when you return to your desk.</div>
+        </div>
+        <div class="speaker-section-2-wrapper">
+            <div class="speaker-section-2">
+                <div class="speaker-m-pic">
+                    <img src="./images/koitospeaker.png" alt="">
+                </div>
+                <div class="featuring-speaker">
+                    <div style="font-size: 3.5vw;">FEATURING</div>
+                    <div style="font-size: 4.5vw;">HOGAKOITO KYAPATA</div>
+                </div>
+                <div class="speaker-text">Meet with industry experts and social sector leaders as they lead forward-thinking conversations, deliver sessions jam-packed with actionable strategies, and provide you with tools you can implement when you return to your desk.</div>
+                <div class="speaker-socials">INSTA VINSTA IDHAR</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
