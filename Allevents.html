@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #FFFEE9;
+        }
+        
+        @font-face {
+            font-family: Satoshi;
+            src: url(./fonts/Satoshi-Variable.ttf);
+        }
+        
+        .swiper {
+            height: 200vh;
+            overflow: visible;
+        }
+        
+        .swiper .swiper-wrapper {
+            align-items: center;
+            overflow: visible;
+        }
+        
+        .swiper .swiper-slide {
+            border-radius: 5px;
+            height: 35vh !important;
+            background-color: rgba(0, 0, 255, 0.477);
+            transition: 0.2s;
+            overflow: visible;
+            text-align: center;
+        }
+        
+        .swiper .swiper-slide.active {
+            height: 40vh !important;
+        }
+        
+        .swiper .prev,
+        .swiper .next {
+            cursor: pointer;
+            z-index: 100;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.65;
+            transition: 0.2s;
+        }
+        
+        .swiper .prev:hover,
+        .swiper .next:hover {
+            opacity: 1;
+        }
+        
+        .swiper .prev svg,
+        .swiper .next svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .swiper .prev svg path,
+        .swiper .next svg path {
+            fill: rgb(0, 0, 0);
+        }
+        
+        .swiper .prev {
+            left: 25px;
+        }
+        
+        .swiper .next {
+            right: 25px;
+        }
+        
+        .swiper .pagination {
+            margin-left: 8px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4vw;
+            z-index: 10;
+            background-color: transparent;
+        }
+        
+        .swiper .pagination span {
+            font-size: 0;
+            opacity: 1;
+            margin: 0px 6px !important;
+        }
+        
+        .swiper .pagination span.swiper-pagination-bullet-active {
+            background-color: transparent;
+        }
+        
+        .swiper .pagination span.swiper-pagination-bullet {
+            background-color: transparent;
+            display: none;
+        }
+        
+        .swiper-slide-img {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(165, 42, 42, 0.47);
+            opacity: 0.8;
+            transition: 0.2s opacity ease-in-out;
+        }
+        
+        .swiper-slide-cont {
+            width: 80vw;
+            height: 80vh;
+            text-align: center;
+            font-family: Satoshi, sans-serif;
+            font-size: 2vw;
+            color: #E09064;
+            font-weight: 500;
+            transform: translateX(-40vw);
+        }
+        
+        .swiper-slide-title {
+            color: #49581D;
+            font-weight: 500;
+            text-align: center;
+            font-family: Satoshi, sans-serif;
+            font-size: 2.5vw;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+        }
+        
+        .swiper-slide-cont-wrapper {
+            width: 100%;
+            transform: translateX(50%);
+            overflow: visible;
+            opacity: 0;
+            transition: 0.2s opacity ease-in-out;
+        }
+        
+        .swiper .swiper-slide.active .swiper-slide-cont-wrapper {
+            opacity: 1;
+        }
+        
+        .swiper .swiper-slide.active .swiper-slide-img {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-slide-img"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Plantation Drive</div>
+                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur.
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Plantation Drive</div>
+                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur.
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Plantation Drive</div>
+                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur.
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Plantation Drive</div>
+                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur.
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Plantation Drive</div>
+                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur.
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-img"></div>
+                <div class="swiper-slide-cont-wrapper">
+                    <div class="swiper-slide-cont">
+                        <div class="swiper-slide-title">Plantation Drive</div>
+                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur.
+                        <div class="swiper-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+        </div>
+
+        <div class="pagination"></div>
+
+        <div class="prev">
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z" fill="#A99260" />
+          </svg>
+
+        </div>
+        <div class="next">
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z" fill="#A99260" />
+          </svg>
+
+        </div>
+    </div>
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            grabCursor: true,
+            centeredSlides: true,
+            slideActiveClass: "active",
+            navigation: {
+                nextEl: ".next",
+                prevEl: ".prev"
+            },
+            pagination: {
+                el: ".pagination",
+            },
+            autoplay: {
+                enabled: true,
+                delay: 5000
+            },
+            // Media
+            // breakpoints: {
+            //   // when window width is >= 320px
+            //   320: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 20
+            //   },
+            //   // when window width is >= 480px
+            //   480: {
+            //     slidesPerView: 4,
+            //     spaceBetween: 30
+            //   },
+            // }
+        });
+    </script>
+</body>
+
+</html>
