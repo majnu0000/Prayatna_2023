@@ -83,7 +83,7 @@ body {
   position: absolute;
   left: 57%;
   top: 15%;
-  height: 140px;
+  height: 25%;
   transition: height;
   transition-duration: 1s;
 }
@@ -91,13 +91,13 @@ body {
   position: absolute;
   left: 57%;
   top: 15%;
-  height: 160px;
+  height: 28%;
   transition: height;
   transition-duration: 1s;
 }
 .textInAboutUs {
   width: 300px;
-  height: 200px;
+  height: 38%;
   background-color: #ffd98d;
   position: absolute;
   left: 37.9%;
@@ -117,7 +117,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2vw;
   line-height: 30px;
   padding-top: 20px;
   padding-left: 23px;
@@ -131,6 +131,7 @@ body {
   padding-top: 26px;
   padding-left: 23px;
   color: #49581d;
+  font-size: 1.15vw;
 }
 .middlepage{
     width: 100%;
