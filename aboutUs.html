@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prayatna-IIT Guwahati</title>
     <link rel="stylesheet" href="aboutUs.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="navbar">
-        <a href=""
-          ><img
-            src="images\prayatna_logo.png"
-            alt="logo"
-            class="Prayatna-logo nav-items"
-        /></a>
-        <div class="navbar-right">
-          <div class="Events nav-items otherItemsThenRegister">
-            <a href="">Events</a>
-          </div>
-          <div class="Speakers nav-items otherItemsThenRegister">
-            <a href="">Speakers</a>
-          </div>
-          <div class="AboutUs nav-items otherItemsThenRegister">
-            <a href="">About us</a>
-          </div>
-          <div class="Register nav-items"><a href="">Register</a></div>
+        <div class="navbar">
+            <a href=""><img src="images\prayatna_logo.png" alt="logo" class="Prayatna-logo nav-items" /></a>
+            <div class="navbar-right">
+                <div class="Events nav-items otherItemsThenRegister">
+                    <a href="">Events</a>
+                </div>
+                <div class="Speakers nav-items otherItemsThenRegister">
+                    <a href="">Speakers</a>
+                </div>
+                <div class="AboutUs nav-items otherItemsThenRegister">
+                    <a href="">About us</a>
+                </div>
+                <div class="Register nav-items"><a href="">Register</a></div>
+            </div>
         </div>
-      </div>
     </header>
     <div class="aboutUsBox">
-      <img src="images\aboutUs_img.png" alt="aboutUs_img" id="aboutUs_img" />
-      <img src="images\box_AboutUs.png" alt="box_AboutUs" id="box_AboutUs" />
-      <img
-        src="images\swb_with_text.png"
-        alt="swb_with_text"
-        id="swb_with_text"
-      />
-      <div class="textInAboutUs">
-         <p class="insideText_AboutUs">
-          <p class="swbText">Students’ Welfare Board (SWB)</p><p class="swbBelowText">
-            is committed to the total development of
-            the students of IIT-Guwahati. Based on the founding principles of the
-            university, SWB implements programs and activities designed to nurture
-            and develop the mind, body, and spirit.
-          </p> 
-         </p>
-      </div>
+        <img src="images\aboutUs_img.png" alt="aboutUs_img" id="aboutUs_img" />
+        <img src="images\box_AboutUs.png" alt="box_AboutUs" id="box_AboutUs" />
+        <img src="images\swb_with_text.png" alt="swb_with_text" id="swb_with_text" />
+        <div class="textInAboutUs">
+            <p class="insideText_AboutUs">
+                <p class="swbText">Students’ Welfare Board (SWB)</p>
+                <p class="swbBelowText">
+                    is committed to the total development of the students of IIT-Guwahati. Based on the founding principles of the university, SWB implements programs and activities designed to nurture and develop the mind, body, and spirit.
+                </p>
+            </p>
+        </div>
     </div>
     <div class="middlepage">
         <div class="pastEvents">Past Events</div>
-        <div class="muskaan middlepageItems" onmouseenter=" img1In(this)" onmouseout="img1Out(this)" >Muskaan</div>
+        <div class="muskaan middlepageItems" onmouseenter=" img1In(this)" onmouseout="img1Out(this)">Muskaan</div>
         <div class="bloodDonationDrive middlepageItems" onmouseenter=" img2In(this)" onmouseout="img2Out(this)"> Blood Donation Drive</div>
         <div class="plantationDrive middlepageItems" onmouseenter="img3In(this)" onmouseout="img3Out(this)">Plantation Drive</div>
         <div class="peerMentorshipProgram middlepageItems" onmouseenter=" img4In(this)" onmouseout="img4Out(this)">Peer Mentorship Program</div>
         <img src="images\muskaan.png" alt="muskaan" class="img_middlePage" id="muskaanImg">
-        <img src="images\bloodDonationDrive.png" alt="bloodDonationDrive" class="img_middlePage" id="bloodDonationDriveImg" >
+        <img src="images\bloodDonationDrive.png" alt="bloodDonationDrive" class="img_middlePage" id="bloodDonationDriveImg">
         <img src="images\plantationDrive.png" alt="plantationDrive" class="img_middlePage " id="plantationDriveImg">
         <img src="images\peerMentorshipProgram.png" alt="peerMentorshipProgram" class="img_middlePage " id="peerMentorshipProgramImg">
     </div>
@@ -65,30 +56,37 @@
         //    document.querySelector("#muskaanImg").classList.add("img1");
         // });
         function img1In(x) {
-            document.querySelector("#muskaanImg").classList.add("img1");
-                }
-       function img1Out(x) {
-    document.querySelector("#muskaanImg").classList.remove("img1");
-                    }
-                    function img2In(x) {
-            document.querySelector("#bloodDonationDriveImg").classList.add("img2");
-                }
-       function img2Out(x) {
-    document.querySelector("#bloodDonationDriveImg").classList.remove("img2");
-                    }
-                    function img3In(x) {
-            document.querySelector("#plantationDriveImg").classList.add("img3");
-                }
-       function img3Out(x) {
-    document.querySelector("#plantationDriveImg").classList.remove("img3");
-                    }
-                    function img4In(x) {
-            document.querySelector("#peerMentorshipProgramImg").classList.add("img4");
-                }
-       function img4Out(x) {
-    document.querySelector("#peerMentorshipProgramImg").classList.remove("img4");
-                    }
+            document.querySelector("#muskaanImg").style.opacity = "1";
+        }
 
+        function img1Out(x) {
+            document.querySelector("#muskaanImg").style.opacity = "0";
+        }
+
+        function img2In(x) {
+            document.querySelector("#bloodDonationDriveImg").style.opacity = "1";
+        }
+
+        function img2Out(x) {
+            document.querySelector("#bloodDonationDriveImg").style.opacity = "0";
+        }
+
+        function img3In(x) {
+            document.querySelector("#plantationDriveImg").style.opacity = "1";
+        }
+
+        function img3Out(x) {
+            document.querySelector("#plantationDriveImg").style.opacity = "0";
+        }
+
+        function img4In(x) {
+            document.querySelector("#peerMentorshipProgramImg").style.opacity = "1";
+        }
+
+        function img4Out(x) {
+            document.querySelector("#peerMentorshipProgramImg").style.opacity = "0";
+        }
     </script>
-  </body>
+</body>
+
 </html>
