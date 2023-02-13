@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="home.css">
     <style>
         body {
             margin: 0;
@@ -58,10 +60,20 @@
         }
         
         .speaker-m-pic {
+            height: 60vw;
             width: 40vw;
             transform: translateX(50vw);
             padding: 0.5vw;
             border: solid #FFFEE9 2px;
+        }
+        
+        .speaker-m-pic-img {
+            height: 60vw;
+            width: 40vw;
+            background-image: url(./images/ap.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
         
         .speaker-m-pic img {
@@ -118,7 +130,7 @@
         <div class="speaker-section-2-wrapper">
             <div class="speaker-section-2">
                 <div class="speaker-m-pic">
-                    <img src="./images/koitospeaker.png" alt="">
+                    <div class="speaker-m-pic-img"></div>
                 </div>
                 <div class="featuring-speaker">
                     <div style="font-size: 3.5vw;">FEATURING</div>
@@ -129,6 +141,28 @@
                     Joy, Love, Marriage, Spirituality, & more.
                 </div>
                 <div class="speaker-socials">INSTA VINSTA IDHAR</div>
+            </div>
+        </div>
+    </div>
+    <div class="speakers">
+        <div class="title-container-se">
+            <span class="speakers-title">Speakers in spotlight &nbsp;</span>
+        </div>
+        <div class="speaker-container">
+            <div class="speaker-card">
+                <img src="./images/kullu.png" alt="">
+                <div class="speaker-card-name">Aditya Kulshreshtha<br></div>
+                <div class="speaker-card-sub-title">Comedian</div>
+            </div>
+            <div class="speaker-card">
+                <img src="./images/speaker1.png" alt="">
+                <div class="speaker-card-name">Rakesh Shukla<br></div>
+                <div class="speaker-card-sub-title">Zonal NCB Director</div>
+            </div>
+            <div class="speaker-card">
+                <img src="./images/pankaj.png" alt="">
+                <div class="speaker-card-name">Pankaj Bhadouria<br></div>
+                <div class="speaker-card-sub-title">MasterChef | Entrepreneur | Brand Ambassador</div>
             </div>
         </div>
     </div>
