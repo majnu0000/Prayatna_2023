@@ -10,23 +10,30 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <a href=""><img src="images\prayatna_logo.png" alt="logo" class="Prayatna-logo nav-items" /></a>
-            <div class="navbar-right">
-                <div class="Events nav-items otherItemsThenRegister">
-                    <a href="">Events</a>
-                </div>
-                <div class="Speakers nav-items otherItemsThenRegister">
-                    <a href="">Speakers</a>
-                </div>
-                <div class="AboutUs nav-items otherItemsThenRegister">
-                    <a href="">About us</a>
-                </div>
-                <div class="Register nav-items"><a href="">Register</a></div>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img src="images\prayatna_logo.png" alt="logo" class="Prayatna-logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item nav-items">
+                    <a href="#" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item nav-items">
+                    <a href="#" class="nav-link">Speakers</a>
+                </li>
+                <li class="nav-item nav-items">
+                    <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item nav-items Register display_resp"> 
+                    <a href="#" class="nav-link">Register</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </div>
-    </header>
+        </nav>
+</header>
     <div class="aboutUsBox">
         <img src="images\aboutUs_img.png" alt="aboutUs_img" id="aboutUs_img" />
         <img src="images\box_AboutUs.png" alt="box_AboutUs" id="box_AboutUs" />
@@ -87,6 +94,7 @@
             document.querySelector("#peerMentorshipProgramImg").style.opacity = "0";
         }
     </script>
+    <script src="aboutus.js"></script>
 </body>
 
 </html>
