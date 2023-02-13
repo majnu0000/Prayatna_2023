@@ -19,6 +19,181 @@
             src: url(./fonts/Satoshi-Variable.ttf);
         }
         
+        @font-face {
+            font-family: Nephilm;
+            src: url(./fonts/Nephilm.otf);
+        }
+        
+        .navbar {
+            height: 110px;
+            width: 100vw;
+            background-color: #da7c4cd9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            z-index: 10;
+        }
+        
+        .nav-items {
+            margin: auto 32px auto 32px;
+            color: #fffee9;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            line-height: 80px;
+            cursor: pointer;
+        }
+        
+        .nav-items a {
+            text-decoration: none;
+            color: #fffee9;
+        }
+        
+        .otherItemsThenRegister a:hover {
+            color: #ffd98d;
+        }
+        
+        .navbar-right {
+            display: flex;
+            align-items: center;
+            margin-right: 128px;
+        }
+        
+        .Prayatna-logo {
+            height: 45px;
+            margin-left: 128px;
+        }
+        
+        .Register {
+            border-style: solid;
+            height: 43px;
+            width: 110px;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            justify-content: center;
+            border-width: 2px;
+        }
+        
+        .Register:hover {
+            background-color: #ffd98d;
+        }
+        
+        .text-midcontainer {
+            position: absolute;
+            margin-top: 160px;
+            margin-left: 11%;
+            color: #49581d;
+        }
+        
+        #above-prayatna {
+            font-size: 2.6vw;
+            font-weight: 500;
+            font-family: Satoshi, sans-serif;
+        }
+        
+        #prayatna {
+            font-size: 10vw;
+            font-weight: 100;
+            font-family: Nephilm, sans-serif;
+        }
+        
+        #below-prayatna {
+            font-family: Satoshi, sans-serif;
+            font-size: 1.5vw;
+            opacity: 80%;
+            font-weight: 400;
+        }
+        
+        .Rn-btn {
+            color: #49581d;
+            border-style: solid;
+            height: 3vw;
+            width: 10vw;
+            border-radius: 1.5vw;
+            border-color: #da7c4cd9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px 10px #ff450014;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        
+        .Rn-btn:hover {
+            background-color: #ffd98d;
+            border-color: #ffd98d;
+        }
+        
+        .Rn-btn p {
+            font-weight: 700;
+            font-size: 1vw;
+            font-family: Satoshi, sans-serif;
+        }
+        
+        .Rn-btn p a {
+            text-decoration: none;
+            color: #49581d;
+        }
+        
+        .bar_below_lotus {
+            height: 5vh;
+            width: 100%;
+            background-color: #da7c4c;
+            position: absolute;
+            bottom: 11vh;
+        }
+        
+        #lotus {
+            position: absolute;
+            width: 70vw;
+            bottom: 11vh;
+            left: 20%;
+        }
+        
+        .last_bar_below_lotus {
+            width: 100%;
+            height: 10vh;
+            background-color: #da7c4c;
+            position: absolute;
+            bottom: 0;
+        }
+        
+        .homeview {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            z-index: -3;
+        }
+        
+        @media (orientation: portrait) {
+            .Rn-btn {
+                height: 10vw;
+                width: 30vw;
+                border-radius: 4.5vw;
+            }
+            .Rn-btn p {
+                font-size: 3vw;
+            }
+            #below-prayatna {
+                font-size: 4vw;
+                width: 50vw;
+            }
+            #above-prayatna {
+                font-size: 5vw;
+            }
+            #lotus {
+                bottom: 14vh;
+            }
+        }
+        
+        .text-midcontainer * {
+            margin: 0;
+        }
+        
         .upcoming-events {
             font-family: Satoshi, sans-serif;
             font-weight: bold;
@@ -470,39 +645,99 @@
 </head>
 
 <body>
+    <header>
+        <div class="navbar">
+            <a href=""><img src="images\prayatna_logo.png" alt="logo" class="Prayatna-logo nav-items" /></a>
+            <div class="navbar-right">
+                <div class="Events nav-items otherItemsThenRegister"><a href="">Events</a></div>
+                <div class="Speakers nav-items otherItemsThenRegister"><a href="">Speakers</a></div>
+                <div class="AboutUs nav-items otherItemsThenRegister"><a href="">About us</a></div>
+                <div class="Register nav-items"><a href="">Register</a></div>
+            </div>
+        </div>
+    </header>
+    <div class="midcontainer">
+        <div class="text-midcontainer">
+            <p id="above-prayatna">Abcd Presents</p>
+            <p id="prayatna">Prayatna 2023</p>
+            <p id="below-prayatna">
+                <br> The annual socio-welfare festival of IIT Guwahati,<br /> where everyone comes together
+            </p>
+            <br><br>
+            <div class="Rn-btn">
+                <p id="RegisterNow"><a href="">REGISTER NOW</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <img src="images\lotus.png" alt="lotus" id="lotus" class="svg" />
+        <div class="bar_below_lotus"></div>
+        <div class="last_bar_below_lotus"></div>
+    </div>
+    <div class="homeview">
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:10%;left:5%;">
+          <circle cx="5vw" cy="5vw" r="0.8vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.4vw" stroke="white" stroke-width="0.08vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:14%;left:18%;">
+          <circle cx="5vw" cy="5vw" r="1.6vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.8vw" stroke="white" stroke-width="0.16vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:12%;left:45%;">
+          <circle cx="5vw" cy="5vw" r="0.8vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.4vw" stroke="white" stroke-width="0.08vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:40%;left:55%;">
+          <circle cx="5vw" cy="5vw" r="0.8vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.4vw" stroke="white" stroke-width="0.08vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:34%;left:63%;">
+          <circle cx="5vw" cy="5vw" r="1.2vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.6vw" stroke="white" stroke-width="0.2vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:38%;left:70%;">
+          <circle cx="5vw" cy="5vw" r="1.6vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.8vw" stroke="white" stroke-width="0.16vw" fill="#FFD98D" />
+      </svg>
+        <svg width="10vw" height="10vw" class="lights" style="position: absolute; bottom:24%;left:85%;">
+          <circle cx="5vw" cy="5vw" r="0.8vw" fill="#ff450014" />
+          <circle cx="5vw" cy="5vw" r="0.4vw" stroke="white" stroke-width="0.08vw" fill="#FFD98D" />
+      </svg>
+    </div>
     <div class="home-section">
         <div class="upcoming-events">
             Upcoming Events
         </div>
         <div class="events-container">
-            <div class="events-coll ev1" onclick="displayContent1()"><span>01 &nbsp;&nbsp;Donations Drives</span></div>
+            <div class="events-coll ev1" onclick="displayContent1()"><span>01 &nbsp;&nbsp;Keynote speakers</span></div>
             <div class="events-cont events-cont-inactive" id="ec1-container">
                 <div class="events-cont-container inactive closed_box" id="ec1">
                     <div class="about-ev">About the event <br></div>
                     <div class="cont-text">
-                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text descriptionn
+                        Talks by renowned personalities that will provide a new perspective to life. By sharing their experiences and learnings, they are bound to impact us in numerous ways.
                     </div>
                     <br><br><br>
                     <img src="./images/img1.png" class="event-content-img" alt="">
                 </div>
             </div>
-            <div class="events-coll ev2" onclick="displayContent2()"><span>02  &nbsp;&nbsp;WORKSHOPS & TALKS </span></div>
+            <div class="events-coll ev2" onclick="displayContent2()"><span>02  &nbsp;&nbsp;awareness campaigns</span></div>
             <div class="events-cont " id="ec2-container">
                 <div class="events-cont-container active open_box" id="ec2">
                     <div class="about-ev">About the event <br></div>
                     <div class="cont-text">
-                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text descriptionn
+                        Cyclothons, hackathons, plantation drives and much more to raise awareness for many social issues. A chance to be a part of something bigger!
                     </div>
                     <br><br><br>
                     <img src="./images/img1.png" class="event-content-img" alt="">
                 </div>
             </div>
-            <div class="events-coll ev3" onclick="displayContent3()"><span>03 &nbsp;&nbsp;cultural events</span></div>
+            <div class="events-coll ev3" onclick="displayContent3()"><span>03 &nbsp;&nbsp;Workshops</span></div>
             <div class="events-cont events-cont-inactive" id="ec3-container">
                 <div class="events-cont-container inactive closed_box" id="ec3">
                     <div class="about-ev">About the event <br></div>
                     <div class="cont-text">
-                        Event description text text descri ption text des cri pt ion text desc ription textdes cription text descrip tion text des cri ption text text text text descriptionn
+                        Workshops on social awareness are educational events designed to help people understand the issues affecting their communities and the world at large. They will cover a variety of topics, such as understanding social justice, recognizing privilege, exploring
+                        identity, and learning how to become an active and engaged citizen.
                     </div>
                     <br><br><br>
                     <img src="./images/img1.png" class="event-content-img" alt="">
@@ -659,7 +894,7 @@
     </div>
 
     <div class="spacer"></div>
-    <footer>
+    <!-- <footer>
         <div class="logoPlusText">
             <img src="images\prayatna_logo.png" alt="prayatna_logo" id="prayatna_logo" />
             <p class="textbelowlogo">Prayatna<br />2023</p>
@@ -672,13 +907,34 @@
             <a href=""><img src="images\bepic.png" alt="beLogo" class="logos_right" /></a>
             <p class="paraBelowLogos">+91 8287259810<br>aditya.des21@iitg.ac.in</p>
         </div>
-    </footer>
+    </footer> -->
 
 
 
 
 
 
+    <!-- <div class="extraspace">
+    </div> -->
+    <script src="anime.min.js" type="text/javascript"></script>
+    <script>
+        function randomValues() {
+            anime({
+                targets: '.lights',
+                translateX: function() {
+                    return anime.random(0, 30);
+                },
+                translateY: function() {
+                    return anime.random(0, 30);
+                },
+                easing: 'easeInOutQuad',
+                duration: 3000,
+                complete: randomValues
+            });
+        }
+
+        randomValues();
+    </script>
 
 
     <script>
@@ -740,6 +996,21 @@
             document.getElementById("ec1-container").classList.add("events-cont-inactive");
             document.getElementById("ec3-container").classList.remove("events-cont-inactive");
         }
+    </script>
+    <script>
+        var window_width = $(window).width() - $('#lotus').width();
+
+        var document_height = $(document).height() - $(window).height();
+
+        $(function() {
+            $(window).scroll(function() {
+                var scroll_position = $(window).scrollTop();
+                var object_position_left = window_width * (scroll_position / document_height);
+                $('#lotus').css({
+                    'left': object_position_left
+                });
+            });
+        });
     </script>
 </body>
 
