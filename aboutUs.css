@@ -600,7 +600,7 @@ a {
 .footer-distributed{
     position:absolute;
     top: 120vw;
-    width: 100vw;
+    width: 100%;
     left: 0;
 }
 
