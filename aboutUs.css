@@ -539,6 +539,7 @@ a {
 .footer-distributed .footer-icons {
     margin-top: 25px;
     padding-bottom: 20px;
+    margin-left: -25px;
 }
 
 .footer-distributed .footer-icons a {
@@ -569,10 +570,11 @@ a {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
+@media (max-width: 1135px) {
     .footer-distributed {
         font: bold 14px sans-serif;
         display: block;
+        width: 100vw;
     }
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
@@ -591,3 +593,14 @@ a {
         margin-right: auto;
     }
 }
+.speakers{
+    position: absolute;
+    top: 230vh;
+}
+.footer-distributed{
+    position:absolute;
+    top: 120vw;
+    width: 100vw;
+    left: 0;
+}
+
