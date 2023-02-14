@@ -35,7 +35,7 @@ body {
     display: block;
 }
 
-.hamburger{
+.hamburger {
     position: absolute;
     cursor: pointer;
     right: 5%;
@@ -43,8 +43,7 @@ body {
     display: none;
 }
 
-
-.line{
+.line {
     width: 33px;
     background-color: #fffee9;
     height: 3px;
@@ -81,7 +80,6 @@ body {
     justify-content: center;
     border-width: 2px;
 }
-
 
 .aboutUsBox {
     height: 43vw;
@@ -236,30 +234,29 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
-@media only screen and (max-width: 953px){
-     .navbar{
+@media only screen and (max-width: 953px) {
+    .navbar {
         flex-direction: column;
         transition: all 0.7s ease-out;
-     }
-     .navbar-right{
+    }
+    .navbar-right {
         flex-direction: column;
         width: 50%;
-     }
-     .nav-items{
+    }
+    .nav-items {
         margin: auto;
         position: relative;
         left: 15vw;
-     }
-    .h-nav-resp{
+    }
+    .h-nav-resp {
         height: 8vh;
     }
-
-    .hamburger{
+    .hamburger {
         display: block;
     }
-   .display_resp{
-    display: none ;
-   }  
+    .display_resp {
+        display: none;
+    }
 }
 
 * {
@@ -268,7 +265,6 @@ body {
     box-sizing: border-box;
 }
 
-
 li {
     list-style: none;
 }
@@ -276,7 +272,8 @@ li {
 a {
     text-decoration: none;
 }
-.header{
+
+.header {
     border-bottom: 1px solid #E2E8F0;
 }
 
@@ -299,8 +296,9 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color:  #fffee9;
+    background-color: #fffee9;
 }
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -312,13 +310,13 @@ a {
     margin-left: 5rem;
 }
 
-.nav-link{
+.nav-link {
     font-size: 1.2rem;
     font-weight: 500;
     color: #fffee9;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #ffd98d;
 }
 
@@ -339,18 +337,14 @@ a {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
-
     .nav-menu.active {
         left: 0;
     }
-
     .nav-item {
         margin: 2.5rem 0;
     }
-
     .hamburger {
         display: block;
         cursor: pointer;
@@ -358,23 +352,25 @@ a {
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
 }
+
 .Register:hover {
     background-color: #ffd98d;
     color: #fffee9;
     transition: all 0.1s ease-in;
 }
+
 .Register a:hover {
     color: #fffee9;
 }
 
-
+.mid-container {
+    width: 100%;
+    height: 230vh;
+}
