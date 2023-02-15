@@ -176,7 +176,7 @@ body {
     text-align: center;
     z-index: -3;
     background-image: url("./images/bg-about-us.svg");
-    background-size: cover;
+    background-size: 100%;
 }
 
 .pastEvents {
