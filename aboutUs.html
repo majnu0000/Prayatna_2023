@@ -56,10 +56,20 @@
         <div class="bloodDonationDrive middlepageItems" onmouseenter=" img2In(this)" onmouseout="img2Out(this)"> Blood Donation Drive</div>
         <div class="plantationDrive middlepageItems" onmouseenter="img3In(this)" onmouseout="img3Out(this)">Plantation Drive</div>
         <div class="peerMentorshipProgram middlepageItems" onmouseenter=" img4In(this)" onmouseout="img4Out(this)">Peer Mentorship Program</div>
+        <div class="floodRelief middlepageItems" onmouseenter=" img5In(this)" onmouseout="img5Out(this)">Flood Relief Campaign</div>
+        <div class="rakshabandhan middlepageItems" onmouseenter=" img6In(this)" onmouseout="img6Out(this)">Rakshabandhan</div>
+        <div class="halloween middlepageItems" onmouseenter=" img7In(this)" onmouseout="img7Out(this)">Halloween Night</div>
+        <div class="yoga middlepageItems" onmouseenter=" img8In(this)" onmouseout="img8Out(this)">Yoga & Meditation</div>
+        <div class="suicidePrevention middlepageItems" onmouseenter=" img9In(this)" onmouseout="img9Out(this)">Suicide Prevention Workshop</div>
         <img src="images\muskaan.png" alt="muskaan" class="img_middlePage" id="muskaanImg">
         <img src="images\bloodDonationDrive.png" alt="bloodDonationDrive" class="img_middlePage" id="bloodDonationDriveImg">
         <img src="images\plantationDrive.png" alt="plantationDrive" class="img_middlePage " id="plantationDriveImg">
-        <img src="images\peerMentorshipProgram.png" alt="peerMentorshipProgram" class="img_middlePage " id="peerMentorshipProgramImg">
+        <img src="images\peerMentorshipCircle_img.jpg" alt="peerMentorshipProgram" class="img_middlePage " id="peerMentorshipProgramImg">
+        <img src="images\floodReliefCircle_img.jpg" alt="floodReliefCircle_img" class="img_middlePage" id="floodReliefImg">
+        <img src="images\rakshabandhanCircle_img.jpg" alt="rakshabandhanCircle_img" class="img_middlePage" id="rakshabandhanImg">
+        <img src="images\halloweenCircle_img.jpg" alt="halloweenCircle_img" class="img_middlePage" id="halloweenImg">
+        <img src="images\meditationCircle_img.jpg" alt="meditationCircle_img" class="img_middlePage" id="yogaMeditationImg">
+        <img src="images\suicidePreventionCircle_img.jpg" alt="suicidePreventionCircle_img" class="img_middlePage" id="suicidePreventionImg">
     </div>
 
 
@@ -182,6 +192,41 @@
 
         function img4Out(x) {
             document.querySelector("#peerMentorshipProgramImg").style.opacity = "0";
+        }
+        function img5In(x) {
+            document.querySelector("#floodReliefImg").style.opacity = "1";
+        }
+
+        function img5Out(x) {
+            document.querySelector("#floodReliefImg").style.opacity = "0";
+        }
+        function img6In(x) {
+            document.querySelector("#rakshabandhanImg").style.opacity = "1";
+        }
+
+        function img6Out(x) {
+            document.querySelector("#rakshabandhanImg").style.opacity = "0";
+        }
+        function img7In(x) {
+            document.querySelector("#halloweenImg").style.opacity = "1";
+        }
+
+        function img7Out(x) {
+            document.querySelector("#halloweenImg").style.opacity = "0";
+        }
+        function img8In(x) {
+            document.querySelector("#yogaMeditationImg").style.opacity = "1";
+        }
+
+        function img8Out(x) {
+            document.querySelector("#yogaMeditationImg").style.opacity = "0";
+        }
+        function img9In(x) {
+            document.querySelector("#suicidePreventionImg").style.opacity = "1";
+        }
+
+        function img9Out(x) {
+            document.querySelector("#suicidePreventionImg").style.opacity = "0";
         }
     </script>
     <script src="aboutus.js"></script>
