@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prayatna-IIT Guwahati</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
         body {
             display: flex;
@@ -22,6 +23,7 @@
         }
         
         .swiper {
+            margin-top: -50vh;
             height: 300vh;
             overflow: visible;
         }
@@ -185,6 +187,12 @@
             .swiper-slide-title {
                 font-size: 7vw;
             }
+            .swiper .swiper-slide {
+                height: 30vw !important;
+            }
+            .swiper .swiper-slide.active {
+                height: 37vw !important;
+            }
         }
     </style>
 </head>
@@ -198,7 +206,8 @@
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
                         <div class="swiper-slide-title">Book Swap</div>
-                        An opportunity for bibliophiles to connect by swapping their books. This will not only save money but also build connectedness in the community.
+                        Share the joy of reading at the Prayatna 2023 Book Swap Event! Organised by the Academic Initiative Club, bring a book you love and exchange it for a new treasure. Let's spread the love of literature and make new friends! An opportunity for bibliophiles
+                        to connect by swapping their books. This will not only save money but also build connectedness in the community.
                         <br>
                         <br>
                         <div>
@@ -216,7 +225,8 @@
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
                         <div class="swiper-slide-title">Quiz</div>
-                        Encouraging people to become more informed and aware of the various issues affecting their communities and the world.
+                        Encouraging people to become more informed and aware of the various issues affecting their communities and the world. Get ready to test your knowledge and compete with the brightest minds! The Academic Initiative Club presents the Inter-Hostel Quiz Competition,
+                        happening on 18th February as part of Prayatna 2023. Join us from 3pm to 4pm for a fun and educational event with a prize worth 8k.
                         <br><br>
                         <div>
                             Venue: Conference Hall 2 <br> Date: 18 Mar 2023 <br> Time: 3 PM onwards</div>
@@ -233,8 +243,9 @@
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
                         <div class="swiper-slide-title">Debates</div>
-                        An opportunity to share ideas and perspectives and learn more about different sides of an issue. Debate topics can range from poverty and inequality to climate change and environmental sustainability, to gender issues, to healthcare and education. The
-                        goal of the event is to provide participants with a forum to share their views and to engage in meaningful dialogue.
+                        An opportunity to share ideas and perspectives and learn more about different sides of an issue. Put your speaking skills to the test and join the academic debate. "The Rebuttal" is here, brought to you by the Academic Initiative Club as part of Prayatna
+                        2023. On 19th Feb at 2pm-3pm, express your views and thoughts on the topic: "Do extra-curricular activities help us in tackling academic pressure, or do they increase the pressure on us?" With a prize worth 8k, it's time to sharpen
+                        your arguments and show us what you got!
                         <br><br>
                         <div>
                             Venue: Conference Hall Lounge <br> Date: 19 Mar 2023 <br> Time: 2 PM onwards</div>
@@ -247,7 +258,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background-image: url(./images/bsfband.jpg);"></div>
+                <div class="swiper-slide-img" style="background-image: url(./images/bsfband.png);"></div>
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
                         <div class="swiper-slide-title">BSF Band</div>
@@ -343,7 +354,8 @@
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
                         <div class="swiper-slide-title">Cyclothon</div>
-                        With an aim to spread awareness about AIDS, we will be organizing a cyclothon in IIT Guwahati. Participants will also be given attractive merch and refreshments. We will also install interactive displays, to raise awareness about AIDS and HIV.
+                        For spreading awareness about HIV/AIDS & other STDs among Campus Junta and to practice a healthy lifestyle, The Red Ribbon Club of the Students Welfare Board, IIT Guwahati will conduct "Cyclothon: A race to spread HIV/AIDS awareness" in PRAYATNA.Participants
+                        will also be given attractive merch and refreshments. We will also install interactive displays, to raise awareness about AIDS and HIV.
                         <br><br>
                         <div>
                             Date: 18 Feb 2023 </div>
@@ -394,7 +406,8 @@
                 <div class="swiper-slide-cont-wrapper">
                     <div class="swiper-slide-cont">
                         <div class="swiper-slide-title">Social Awareness Workshop</div>
-                        An interactive session with participants who have a keenness towards the development of society in association with Buddha institute
+                        The Social Service Club, IIT Guwahati in collaboration with ‘The Buddha Institute’ brings to you, a "Social Awareness Workshop". Over the course of this workshop, you'll find a variety of Panel Discussions, sessions by Sector Leaders and Social Entrepreneurs,
+                        and Q&A sessions lined up. Don't miss this chance to learn about different social experiences, opportunity in the sector, and scope of professional engagement through their curriculum!
                         <!-- <div class="linkContainer">
                             <a href="#" class="nav-link">Register</a>
                         </div> -->
@@ -528,7 +541,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper(".swiper", {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 10,
             loop: true,
             grabCursor: true,
@@ -543,18 +556,13 @@
                 delay: 5000
             },
             // Media
-            // breakpoints: {
-            //   // when window width is >= 320px
-            //   320: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 20
-            //   },
-            //   // when window width is >= 480px
-            //   480: {
-            //     slidesPerView: 4,
-            //     spaceBetween: 30
-            //   },
-            // }
+            breakpoints: {
+                // when window width is >= 320px
+                500: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                },
+            }
         });
     </script>
 </body>
