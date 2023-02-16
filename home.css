@@ -180,7 +180,8 @@ body {
         font-size: 5vw;
     }
     #lotus {
-        bottom: 13.5vh;
+        bottom: 7.5vh;
+        transition: all 0.3s ease-in;
     }
 }
 
@@ -493,6 +494,7 @@ a {
     position: relative;
 }
 
+
 .ltcircle {
     position: absolute;
     bottom: 0%;
@@ -524,6 +526,7 @@ a {
     position: absolute;
     left: 80%;
     transition: var(--antime) left var(--cubez);
+    cursor: pointer;
 }
 
 .ltplus line {
