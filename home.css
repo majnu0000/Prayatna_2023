@@ -379,6 +379,7 @@ a {
     padding: 3vw 6vw;
     box-sizing: border-box;
     font-family: Satoshi, sans-serif;
+    margin-top: -4%;
 }
 
 .speakers-title {
@@ -494,9 +495,18 @@ a {
     border-radius: 3vw;
     margin: 2vw 2vw;
 }
+.sponsorType {
+    font-family: Satoshi, sans-serif;
+    color: #49581D;
+    font-size: 1.2vw;
+    font-weight: 600;
+
+}
+
 #asacs{
    width: 90%;
    margin-left: 5%;
+   margin-bottom: -11%;
 }
 #peacock{
     width: 77%;
@@ -513,8 +523,15 @@ a {
     margin-left: 12%;
 }
 #khoka{
-    width: 101%;
-    margin-top: 9%;
+    margin-top: 13%;
+    width: 91%;
+    margin-left: 7%;
+    margin-bottom: 7%;
+}
+#xtra{
+height: 89%;
+margin-left: 14%;
+margin-top: 6%;
 }
 .bg_black{
     background-color: black;
