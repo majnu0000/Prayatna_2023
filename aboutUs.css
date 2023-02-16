@@ -72,7 +72,7 @@ body {
 
 .Prayatna-logo {
     height: 45px;
-    margin-left: 128px;
+    margin-left: 20%;
 }
 
 .Register {
@@ -300,6 +300,10 @@ body {
         margin: auto;
         position: relative;
         left: 15vw;
+    }
+    .Prayatna-logo {
+        margin-left: 2%;
+        transition: all 0.3s ease-in;
     }
     .h-nav-resp {
         height: 8vh;
