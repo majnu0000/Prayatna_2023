@@ -131,7 +131,17 @@
         
         .speakers {
             position: relative !important;
-            top: 0;
+            top: 20px;
+        }
+        .footer-distributed{
+            position: absolute; 
+            top: 360vh;
+        }
+        @media only screen and (max-width:1135px) {
+            .footer-distributed{
+                top: 360vw;
+                transition: all 0.3s ease-in;
+            }
         }
     </style>
 </head>
@@ -205,7 +215,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-distributed" style="position: absolute; top: 360vh;">
+    <div class="footer-distributed">
         <div class="footer-left">
             <img src="images\prayatna_logo.png" alt="prayatna_logo" id="PrayatnaLogoOnLeft" />
             <div class="textBelowLogoOnLeft">
