@@ -92,11 +92,16 @@ body {
     font-weight: 500;
     font-family: Satoshi, sans-serif;
 }
+.presents{
+    font-size: 2vw;
+    font-weight: 400;
+}
 
 #prayatna {
     font-size: 10vw;
     font-weight: 100;
     font-family: Nephilm, sans-serif;
+    margin-top: -4%;
 }
 
 #below-prayatna {
